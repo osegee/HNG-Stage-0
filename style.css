@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* ===== PROFILE CARD ===== */
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===== IMAGE ===== */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #aacc00;
+}
+
+/* ===== TEXT ===== */
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.profile-title {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+  margin-top: 20px;
+}
+
+.profile-bio {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  max-width: 31.25rem;
+}
+
+/* ===== SOCIAL LINKS ===== */
+nav .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #aacc00;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  color: #80b918;
+  outline: none;
+}
+
+/* ===== PROFILE TIME ===== */
+.profile-time {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(170, 204, 0, 0.3); /* subtle border with your accent color */
+  color: #222;
+  padding: 0.5rem 1.25rem;
+  margin: 1.2rem auto 1.5rem auto;
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: box-shadow 0.3s;
+}
+
+.profile-time:empty {
+  display: none;
+}
+
+/* ===== HOBBIES & DISLIKES SECTIONS ===== */
+section[data-testid="test-user-hobbies"],
+section[data-testid="test-user-dislikes"] {
+  margin-top: 1rem;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  /* box-shadow removed */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(170, 204, 0, 0.3);
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+}
+
+section[data-testid="test-user-dislikes"] {
+  margin-top: 0.75rem;
+}
+
+/* Headings (Hobbies / Dislikes) */
+section[data-testid="test-user-hobbies"] h3,
+section[data-testid="test-user-dislikes"] h3 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Lists */
+section[data-testid="test-user-hobbies"] ul,
+section[data-testid="test-user-dislikes"] ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Each list item */
+section[data-testid="test-user-hobbies"] li,
+section[data-testid="test-user-dislikes"] li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Optional decorative bullet using ::before */
+section[data-testid="test-user-hobbies"] li::before,
+section[data-testid="test-user-dislikes"] li::before {
+  content: "\2022";
+  color: #aacc00;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  main[data-testid="main-container"] {
+    margin-left: 30px; /* or 1rem if needed */
+  }
+  .profile-card {
+    padding: 1rem;
+  }
+
+  .profile-name {
+    font-size: 1.2rem;
+  }
+
+  .profile-title {
+    font-size: 0.95rem;
+  }
+}
