@@ -21,5 +21,5 @@ Features
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/osegee/HNG-stage-0.git
+   git clone https://github.com/osegee/HNG-Stage-0.git
    ```
