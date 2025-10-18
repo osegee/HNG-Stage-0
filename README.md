@@ -15,7 +15,7 @@ Features
 
 ## 🚀 Live Demo
 
-[View Project on Netlify](https://osegee.netlify.app/)
+[View Project on Netlify](https://osegee.netlify.app)
 
 ## 🧭 How to Run Locally
 
