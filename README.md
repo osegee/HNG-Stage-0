@@ -1,17 +1,22 @@
 # Profile Card Project
 
-This is a simple profile card built with **HTML**, **CSS**, and **Vanilla JavaScript**.
+This is a multi-page profile card project built with **HTML**, **CSS**, and **Vanilla JavaScript**.
 
-Features
+## Features
 
-- Displays profile details (name, title, image, time-in-miliseconds, bio, hobbies, dislikes)
-- Dynamic current time display
+- Profile card with name, title, image, current time, bio, hobbies, dislikes, and social links
+- **About Me** page with bio, goals, confidence areas, future note, and extra thoughts
+- **Contact Us** page with accessible form, validation, and success message
+- Navigation between all pages
+- Responsive and accessible design
+- All styles organized in a single CSS file with clear section comments
+- All JavaScript for form validation in a separate JS file
 
-## 🛠️Technologies Used
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript(Vanilla)
 
 ## 🚀 Live Demo
 
