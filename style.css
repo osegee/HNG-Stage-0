@@ -1,10 +1,10 @@
+/* global styles and resets */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
 body {
   font-family: "Poppins", Arial, sans-serif;
   background-color: #f4f6f8;
@@ -15,7 +15,7 @@ body {
   padding: 1rem;
 }
 
-/* ===== PROFILE CARD ===== */
+/* Home page / profile card styles */
 .profile-card {
   background-color: #ffffff;
   border-radius: 16px;
@@ -27,7 +27,6 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ===== IMAGE ===== */
 .profile-image {
   width: 120px;
   height: 120px;
@@ -37,7 +36,6 @@ body {
   border: 3px solid #aacc00;
 }
 
-/* ===== TEXT ===== */
 .profile-name {
   font-size: 1.4rem;
   font-weight: 600;
@@ -59,7 +57,7 @@ body {
   max-width: 31.25rem;
 }
 
-/* ===== SOCIAL LINKS ===== */
+/* social links */
 nav .social-links {
   list-style: none;
   display: flex;
@@ -81,13 +79,13 @@ nav .social-links {
   outline: none;
 }
 
-/* ===== PROFILE TIME ===== */
+/* profile time */
 .profile-time {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 12px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(170, 204, 0, 0.3); /* subtle border with your accent color */
+  border: 1px solid rgba(170, 204, 0, 0.3);
   color: #222;
   padding: 0.5rem 1.25rem;
   margin: 1.2rem auto 1.5rem auto;
@@ -102,14 +100,13 @@ nav .social-links {
   display: none;
 }
 
-/* ===== HOBBIES & DISLIKES SECTIONS ===== */
+/* Hobbies & Dislikes Sections */
 section[data-testid="test-user-hobbies"],
 section[data-testid="test-user-dislikes"] {
   margin-top: 1rem;
   text-align: left;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 12px;
-  /* box-shadow removed */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(170, 204, 0, 0.3);
@@ -157,10 +154,10 @@ section[data-testid="test-user-dislikes"] li::before {
   margin-right: 4px;
 }
 
-/* ===== RESPONSIVE ===== */
+/* Responsive Styles */
 @media (max-width: 480px) {
   main[data-testid="main-container"] {
-    margin-left: 30px; /* or 1rem if needed */
+    margin-left: 30px;
   }
   .profile-card {
     padding: 1rem;
@@ -172,5 +169,243 @@ section[data-testid="test-user-dislikes"] li::before {
 
   .profile-title {
     font-size: 0.95rem;
+  }
+}
+
+/* Page Navigation */
+.page-navigation {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.nav-btn {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #aacc00;
+  border: 2px solid #aacc00;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+  background-color: #aacc00;
+  color: #fff;
+  outline: none;
+}
+
+.nav-link {
+  color: #aacc00;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #80b918;
+  text-decoration: underline;
+}
+
+.nav-separator {
+  margin: 0 0.5rem;
+  color: #999;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* contact page */
+.contact-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.contact-section {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.contact-section h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.contact-intro {
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Poppins", Arial, sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #aacc00;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  display: block;
+  min-height: 1.2rem;
+}
+
+.submit-btn {
+  background-color: #aacc00;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #80b918;
+  outline: none;
+}
+
+.success-message {
+  display: none;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  margin-top: 1rem;
+}
+
+/* ========================================
+   ABOUT PAGE STYLES
+======================================== */
+
+/* ===== ABOUT PAGE ===== */
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.about-section {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-section p:last-child {
+  margin-bottom: 0;
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  color: #555;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.about-list li::before {
+  content: "•";
+  color: #aacc00;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* ========================================
+   RESPONSIVE STYLES FOR CONTACT & ABOUT PAGES
+======================================== */
+
+/* ===== RESPONSIVE FOR NEW PAGES ===== */
+@media (max-width: 768px) {
+  .contact-page,
+  .about-page {
+    padding: 1rem;
+  }
+
+  .contact-section,
+  .about-section {
+    padding: 1.5rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav-btn {
+    margin: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
   }
 }
