@@ -226,9 +226,7 @@ section[data-testid="test-user-dislikes"] li::before {
   margin-bottom: 1rem;
 }
 
-/* ========================================
-   CONTACT PAGE STYLES
-======================================== */
+/* CONTACT PAGE STYLES */
 
 .contact-page {
   max-width: 600px;
@@ -329,9 +327,7 @@ section[data-testid="test-user-dislikes"] li::before {
   margin-top: 1rem;
 }
 
-/* ========================================
-   ABOUT PAGE STYLES
-======================================== */
+/* ABOUT PAGE STYLES */
 
 .about-page {
   max-width: 1200px;
