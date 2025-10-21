@@ -207,7 +207,6 @@ section[data-testid="test-user-dislikes"] li::before {
 .nav-link:hover,
 .nav-link:focus {
   color: #80b918;
-  text-decoration: underline;
 }
 
 .nav-separator {
@@ -376,7 +375,6 @@ section[data-testid="test-user-dislikes"] li::before {
   font-size: 1.5rem;
   color: #222;
   margin-bottom: 1rem;
-  border-bottom: 3px solid #aacc00;
   padding-bottom: 0.5rem;
 }
 
